@@ -1,0 +1,87 @@
+#charset "utf-8";
+
+/* CSS document */
+
+/* agregar un reset de CSS */
+
+body {
+   font-size:70%;
+}
+
+
+h1 {
+   font:normal 2.5em  Verdana, Geneva, sans-serif;
+   background:-webkit-linear-gradient(top, #00F, #0CF);
+   width:52%;
+   border-radius:9px;
+   margin:16px auto;
+   box-shadow:#0F0 7px 7px 9px;
+   text-align:center;
+   padding:7px;
+   color:#FFF;
+   text-shadow:#000 3px 3px 5px;
+}
+
+h2 {
+   font:bold 1.6em Verdana, Geneva, sasn-serif;
+   margin:7px;
+   padding: 7px 0px 7px 25px;  
+   color:#000;
+   float:left;
+   border-bottom:1px dashed #999;
+}
+
+audio {
+   margin-left:880px;
+}
+
+section {
+   width:97%;   
+   margin:7px auto;
+   
+}
+
+figure {
+   float:left;
+}
+
+figure img {
+   margin-top:7px;
+   padding:4px;
+   background:#999;
+   border-radius:16px;
+   -webkit-transition:-webkit-transform 0.3s ease-in-out 0.1s; 
+   box-shadow:#999 7px 7px 9px; 
+}
+
+figure img:hover {
+   -webkit-transform:scale(2.5);
+}
+
+figcaption {
+   font-family:Arial, Helvetica, sans-serif;
+   font-size:1.0em;
+   text-align:center;
+}
+
+iframe {
+   margin:9px auto;
+   margin-left:300px;
+   background: #00F;
+   padding:7px;
+   border:3px solid #999;
+   -webkit- border-radius:7px;
+   border-radius:9px;
+}
+
+footer {
+   clear:both;
+   background-color:#CCCCCC;
+}
+
+footer p {
+   font:0.7em Georgia, Times New Roman, sans-serif;
+   color:#666;
+   margin:3px auto;
+   text-align:center;
+}
