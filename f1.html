@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Datos Ingresados </title>
+    <link rel="stylesheet" type="text/css" href="datos.css">
+</head>
+
+<body>
+    <h2 align="center"> DATOS INGRESADOS </h2>
+    <p align="center">verifique sus datos </p>
+    <table align="center" border="3">
+        
+        <script type="text/javascript">
+            // Sending form data
+            // https://developer.mozilla.org/es/docs/Learn/Forms/Sending_and_retrieving_form_data 
+            var urlDatos = window.location.search;
+            var urlParams = new URLSearchParams(urlDatos);
+            var nombre = urlParams.get('nombre');
+            var email = urlParams.get('email');
+            var whatsapp = urlParams.get('celular');
+            var origen = urlParams.get('origen');
+            var efectivo = urlParams.get('efectivo');
+            var debito = urlParams.get('debito');
+            var credito = urlParams.get('credito');
+            var pago = "";
+            if (efectivo) { pago = pago + efectivo };
+            if (debito) { pago = pago + " " + debito };
+            if (credito) { pago = pago + " " + credito };
+
+            //with(document.f1)
+            document.write('<tr>');
+            document.write('<td> nombre </td>');
+            document.write('<td>' + nombre + '</td>');
+            document.write('</tr>');
+
+            document.write('<tr>');
+            document.write('<td> email </td>');
+            document.write('<td>' + email + '</td>');
+            document.write('</tr>');
+
+            document.write('<tr>');
+            document.write('<td> whatsapp </td>');
+            document.write('<td>' + whatsapp + '</td>');
+            document.write('</tr>');
+
+            document.write('<tr>');
+            document.write('<td> origen </td>');
+            document.write('<td>' + origen + '</td>');
+            document.write('</tr>');
+
+            document.write('<tr>');
+            document.write('<td> puedo pagar con </td>');
+            document.write('<td>' + pago + '</td>');
+            document.write('</tr>');
+
+        </script>
+    </table>
+    <br>
+
+    <form action="index.html" align="center">
+        <input type="submit" value="Volver">
+    </form>
+
+</body>
+
+</html>
