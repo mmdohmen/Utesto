@@ -10,6 +10,6 @@ body{
  p{
     color:yellow;
  }
- table{
+ table, thead, tbody{
      color:yellow;
  }

@@ -7,15 +7,15 @@
 //               $database => db:      'alumnos2021'
 //               $port     =>
 //               $socket   =>  
-//$conexion = mysqli_connect("localhost", 'root', "root", 'testos');
+$conexion = mysqli_connect("localhost", 'root', "root", 'utesto');
 // en el SERVIDOR https://ar.000webhost.com/members/website/mmdohmen/dashboard
-$conexion = mysqli_connect("localhost", 'id18225605_testo', "Zeta-18079551", 'id18225605_utesto');
+//$conexion = mysqli_connect("localhost", 'id18225605_testo', "Zeta-18079551", 'id18225605_utesto');
 
 if(mysqli_connect_errno()) {
     echo "fallo la conexion - error: " . mysqli_connect_errno();
 } else {
-    echo "🤙 CONEXION ESTABLECIDA mediante archivo externo";
+    //echo "🤙 CONEXION ESTABLECIDA mediante archivo externo";
 }
-echo "<br><br>";
+//echo "<br><br>";
 
 ?>

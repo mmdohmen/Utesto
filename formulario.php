@@ -36,47 +36,51 @@
 
     <h1> <cite>si queres ser parte de nuestras historias ...</cite> </h1>
     <h3> (ingresa los datos solicitados ..., y nos comunicaremos a la brevedad ...) </h3>
-    <br />
-    <h4> DATOS de contacto </h4>
+    <br>
 
     <section>
-        <form name="Formulario" id="miformulario" action="conexion.php" method="POST" autocomplete="off">
-
-            <label> nombre/nick: </label>
-            <input type="text" name="nombre" id="nombre" placeholder="campo obligatorio" required autofocus>
-            <br /><br />
-
-            <label> contraseña: </label>
-            <input type="password" name="pass" id="pass" placeholder="campo obligatorio" required autofocus>
-            <br /><br />
-
-            <label> email: </label>
-            <input type="Email" name="email" id="email" placeholder="xxxxxxxxx@xxxxxx.xxx" required>
-            <br /><br />
-
-            <label> whatsapp: </label>
-            <input pattern="[0-9]{10}" name="celular" id="celular" placeholder="inc cod. area / SIN 15">
-            <br /><br />
-
-            <label> origen: </label>
-            <input type="text" name="origen" id="origen" placeholder="ciudad & provincia" required>
-            <br /><br />
-
-            <label> puedo pagar con: </label> &nbsp; &nbsp;
-            <em>
-                efectivo <input type="checkbox" name="efectivo" value="efectivo" /> &nbsp; &nbsp;
-                debito <input type="checkbox" name="debito" value="debito" /> &nbsp; &nbsp;
-                credito <input type="checkbox" name="credito" value="credito" /> &nbsp; &nbsp;
-            </em>
-            <br /><br />
-
-            <label> comentarios: </label>
-            <textarea name="comentarios" cols="70" rows="3"> </textarea>
-            <br /><br />
+        <form name="Formulario" id="miformulario" action="registrar.php" method="POST" autocomplete="off">
+            <table>
+                <tr>
+                    <td><em>nombre/nick:</em></td>
+                    <td><input type="text" name="nombre" id="nombre" placeholder="campo obligatorio" required autofocus></td>
+                </tr>
+                <tr>
+                    <td><em>contraseña:</em></td>
+                    <td><input type="password" name="pass" id="pass" placeholder="campo obligatorio" required autofocus></td>
+                </tr>
+                <tr>
+                    <td><em>email:</em></td>
+                    <td><input type="Email" name="email" id="email" placeholder="xxxxxxxxx@xxxxxx.xxx" required></td>
+                </tr>
+                <tr>
+                    <td><em>whatsapp:</em></td>
+                    <td><input name="celular" id="celular" placeholder="inc cod.area/SIN 15"></td>
+                </tr>
+                <tr>
+                    <td><em>origen:</em></td>
+                    <td><input type="text" name="origen" id="origen" placeholder="ciudad & provincia" required></td>
+                </tr>
+                <tr>
+                    <td><em>puedo pagar con:</em></td>
+                    <td>
+                        <em>
+                            efectivo <input type="checkbox" name="efectivo" /> &nbsp; &nbsp;
+                            debito <input type="checkbox" name="debito" /> &nbsp; &nbsp;
+                            credito <input type="checkbox" name="credito" /> &nbsp; &nbsp;
+                        </em>
+                    </td>
+                </tr>
+                <tr>
+                    <td><em>preguntas:</em></td>
+                    <td><textarea name="comentarios" cols="30" rows="7"> </textarea></td>
+                </tr>
+            </table>
 
             <!-- comentario: BOTON Intro -->
-            <input type="submit" id="Enviar" value="Enviar" class="btn btn-dark">
-            <br /><br />
+            <input type="submit" id="Enviar" value="Enviar" class="btn btn-warning">
+            <a href="index.html" class="btn btn-secondary">Volver</a>
+            <br><br>
 
         </form>
     </section>
